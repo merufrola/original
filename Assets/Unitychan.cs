@@ -21,12 +21,12 @@ public class Unitychan : MonoBehaviour {
 
 
         if (Input.GetKeyDown (KeyCode.LeftArrow)) {
-            animator.SetBool("TurnL", true);
+            animator.SetBool("turnL", true);
         }
 
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
-            animator.SetBool("TurnL", false);
+            animator.SetBool("turnL", false);
         }
 
 
