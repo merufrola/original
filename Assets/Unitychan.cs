@@ -17,7 +17,6 @@ public class Unitychan : MonoBehaviour {
             transform.position += Vector3.forward * speed * Time.deltaTime;
             float pos_x = transform.position.x;
         }
-        Debug.Log(transform.position);
 
 
 
@@ -47,5 +46,11 @@ public class Unitychan : MonoBehaviour {
     {
         int distance = 10;
         
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+
+        Debug.Log(col.collider.name);
     }
 }
