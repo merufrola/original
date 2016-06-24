@@ -36,4 +36,11 @@ public class enemy : MonoBehaviour
         float levelSize = 55f;
         return new Vector3(Random.Range(-levelSize, levelSize), 0, Random.Range(-levelSize, levelSize));
     }
+
+    void Damage()
+    {
+
+        Destroy(this.gameObject);
+
+    }
 }

@@ -5,7 +5,7 @@ public class EnemyGenerator : MonoBehaviour {
     public GameObject enemy2;
 	// Use this for initialization
 	void Start () {
-        InvokeRepeating("Generate", 0, 1);
+        InvokeRepeating("Generate", 0, 5);
 	}
 	
 	// Update is called once per frame

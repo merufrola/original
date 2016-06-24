@@ -101,6 +101,7 @@
      <Compile Include="Assets\Locomotion Setup\Locomotion\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\JoystickToEvents.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\LocomotionPlayer.cs" />
+     <Compile Include="Assets\Replay.cs" />
      <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
      <Compile Include="Assets\UnityChan\Scripts\AutoBlinkforSD.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
