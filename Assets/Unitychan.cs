@@ -2,51 +2,31 @@
 using System.Collections;
 
 public class Unitychan : MonoBehaviour {
-    Animator animator;
-    public float speed = 5.0f;
+
     // Use this for initialization
-    void Start () {
-        animator = GetComponent<Animator>();
+    void Start()
+    {
+
     }
-	
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            transform.position += Vector3.forward * speed * Time.deltaTime;
-            float pos_x = transform.position.x;
-        }
-
-
-
-        if (Input.GetKeyDown (KeyCode.LeftArrow)) {
-            animator.SetBool("turnL", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            animator.SetBool("turnL", false);
-        }
-
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            animator.SetBool("RUn", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.UpArrow))
-        {
-            animator.SetBool("RUn", false);
-        }
 
         TRP();
 	}
+
     void TRP()
     {
+        RaycastHit hit;
         int distance = 10;
-        
-    }
+        Ray ray = new Ray(transform.position, transform.forward);
+        if (Physics.Raycast(ray, out hit, distance))
+        {
+            Debug.DrawLine(ray.origin,hit.point,Color.red);
+
+        }
+
+        }
 
     void OnCollisionEnter(Collision col)
     {

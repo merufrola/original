@@ -130,6 +130,7 @@
      <Compile Include="Assets\ZRNAssets\PQAssets\Query-Chan\Scripts\QueryEmotionalController.cs" />
      <Compile Include="Assets\ZRNAssets\PQAssets\Query-Chan\Scripts\QuerySoundController.cs" />
      <Compile Include="Assets\enemy.cs" />
+     <Compile Include="Assets\generatorholl.cs" />
      <Compile Include="Assets\objectSkelton.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
