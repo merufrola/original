@@ -45,7 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Enemy2.cs" />
      <Compile Include="Assets\EnemyGenerator.cs" />
+     <Compile Include="Assets\GUIskin.cs" />
      <Compile Include="Assets\Locomotion Setup\Locomotion\Scripts\Locomotion.cs" />
      <Compile Include="Assets\Locomotion Setup\Locomotion\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\Locomotion Setup\Locomotion\Standard Assets\Cameras\Scripts\AutoCam.cs" />
@@ -102,6 +104,7 @@
      <Compile Include="Assets\Locomotion Setup\Scripts\JoystickToEvents.cs" />
      <Compile Include="Assets\Locomotion Setup\Scripts\LocomotionPlayer.cs" />
      <Compile Include="Assets\Replay.cs" />
+     <Compile Include="Assets\Score.cs" />
      <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
      <Compile Include="Assets\UnityChan\Scripts\AutoBlinkforSD.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
@@ -133,6 +136,10 @@
      <Compile Include="Assets\enemy.cs" />
      <Compile Include="Assets\generatorholl.cs" />
      <Compile Include="Assets\objectSkelton.cs" />
+     <Compile Include="Assets\red.cs" />
+     <Compile Include="Assets\reticl.cs" />
+     <Compile Include="Assets\timer.cs" />
+     <Compile Include="Assets\wa.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
      <None Include="Assets\ZRNAssets\license_en.txt" />
