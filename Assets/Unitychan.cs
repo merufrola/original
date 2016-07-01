@@ -15,6 +15,8 @@ public class Unitychan : MonoBehaviour
     int HP = 10;
     public Text HPlabel;
     public Image HPBar;
+    public static RaycastHit hit;
+    public static Ray ray;
     // Use this for initialization
     void Start()
     {
@@ -45,21 +47,25 @@ public class Unitychan : MonoBehaviour
     }
 
         Debug.Log(HP);
-
+        if(HP <= 0)
+        {
+            SceneManager.LoadScene("Gameover");
+        };
     }
 
     void TRP()
     {
-        RaycastHit hit;
+      
         int distance = 5;
-        Ray ray = new Ray(transform.position + new Vector3(0, 0.3f, 0), transform.forward);
+        ray = new Ray(transform.position + new Vector3(-1, 0.3f, 0), transform.forward);
+        
         if (Physics.SphereCast(ray,2, out hit, distance))
         {
             Debug.DrawLine(ray.origin, hit.point, Color.red);
             image.enabled = true;
 
             raicleCanvas.transform.position = hit.point;
-            if (hit.collider.tag == "Ganarator" && Input.GetMouseButtonDown(0))
+            if (hit.collider.tag == "Ganarator" && Input.GetKey(KeyCode.Space))
             //
             {
                 Debug.Log(hit.collider.tag);
@@ -70,14 +76,14 @@ public class Unitychan : MonoBehaviour
 
             }
 
-                if (hit.collider.tag == "Enemy" )
+                if (Input.GetMouseButtonDown(0)) 
                 //
                 {
-                if (Input.GetMouseButtonDown(0))
-                {
+                 if (hit.collider.tag == "Enemy")
+                    {
                     Debug.Log("b");
                     hit.collider.transform.parent.SendMessage("Damage");
-                }
+                 }
                     
                 }
                 Debug.Log(hit.collider.gameObject.name);
